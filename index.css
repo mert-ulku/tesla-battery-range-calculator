@@ -810,6 +810,80 @@ input[type="radio"]
   }
 }
 
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+
+  .header {
+    height: 30vh;
+  }
+
+  .vehicle-menu__link {
+    font-size: 12px;
+  }
+
+  .car-image {
+    max-width: 300px;
+    min-width: 300px;
+  }
+
+  .ac-controls {
+    margin-right: 0
+  }
+
+  .footer-columns {
+    padding: 2rem 0;
+  }
+
+  .subscribe-action {
+    flex-direction: column;
+  }
+
+  .footer__column-wrapper:nth-of-type(4) {
+    margin-bottom: 0
+  }
+
+  .subscribe-action input {
+    margin-right: 0;
+    margin-bottom: .5rem;
+  }
+
+  .wheels {
+    width: 27px;
+    bottom: 1.1rem;
+  }
+
+  .wheels.left {
+    left: 4.7rem;
+  }
+
+  .wheels.right {
+    right: 5.05rem;
+  }
+
+  .car-image.size-21
+  .left,
+  .car-image.size-21
+  .right{
+    width: 30px;
+    bottom: .9rem;
+  }
+
+  .car-image.size-21 .right {
+    right: 4.9rem;
+  }
+
+  .car-image.size-21 .left {
+    left: 4.62rem;
+  }
+
+  .config-information {
+    text-align: center;
+  }
+
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
