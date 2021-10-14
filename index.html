@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tesla</title>
+  <link rel="icon" type="image/png" href="./assets/images/sendcloud.png">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="brand-logo">
+      <img src="assets/images/tesla-logo.svg" alt="tesla-logo">
+    </div>
+    <header class="header">
+      <div class="bg-img">
+        <img
+          srcset="
+            assets/images/hero-image.png 760w,
+            assets/images/hero-image@2x.png"
+          alt="car-model-p100d"
+        >
+      </div>
+      <nav class="vehicle-menu">
+        <ul class="vehicle-menu__list flex-center">
+          <li class="vehicle-menu__list-item">
+            <a class="vehicle-menu__link" href="#">
+              Model S
+            </a>
+          </li>
+          <li class="vehicle-menu__list-item">
+            <a class="vehicle-menu__link" href="#">
+              Model X
+            </a>
+          </li>
+          <li class="vehicle-menu__list-item">
+            <a class="vehicle-menu__link" href="#">
+              Model 3
+            </a>
+          </li>
+          <li class="vehicle-menu__list-item">
+            <a class="vehicle-menu__link" href="#">
+              Roadster
+            </a>
+          </li>
+          <li class="vehicle-menu__list-item">
+            <a class="vehicle-menu__link" href="#">
+              Energy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex-center">
+      <div class="main__content flex-center">
+        <p>Far far away, behind the word mountains...</p>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+          It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+        </p>
+      </div>
+
+      <div class="move-btn chevron-down mb-3 flex-center">
+        <a href="#calculator" class="flex-center">
+          <img src="assets/images/icon-chevron-down.svg" alt="chevron-pointing-down">
+        </a>
+      </div>
+
+      <section id="calculator">
+        <h2>Range Per Charge</h2>
+
+        <div class="car-image" id="car-image">
+          <img src="assets/images/car-base@2x.png" alt="car-image">
+          <img src="assets/images/car-wheel@2x.png" class="wheels left" alt="car-wheels">
+          <img src="assets/images/car-wheel@2x.png" class="wheels right" alt="car-wheels">
+        </div>
+
+        <div class="tesla-result mb-3 flex-center">
+          <div class="info-per-car__item">
+            <img
+              srcset="
+                assets/images/100d.png 450w,
+                assets/images/100d@2x.png"
+              alt="car-model-100d"
+            >
+            <div class="info-per-car__item-km" id="100d-speed-indicator"></div>
+          </div>
+          <div class="info-per-car__item">
+            <img
+              srcset="
+                assets/images/p100d.png 450w,
+                assets/images/p100d@2x.png"
+              alt="car-model-p100d"
+            >
+            <div class="info-per-car__item-km" id="p100d-speed-indicator"></div>
+          </div>
+        </div>
+
+        <div class="tesla-controls flex-center">
+          <div class="tesla-control-item">
+            <p class="tesla-control-item__title">
+              Speed
+            </p>
+            <div class="tesla-controls-button__wrapper flex-center">
+              <div class="tesla-controls-button__wrapper-content">
+                <span class="tesla-controls-button__content" id="speedIndicator"></span>
+                <span>KMH</span>
+              </div>
+              <div class="tesla-controls-button__controls">
+                <button type="button" id="speed-increase">
+                  <img src="assets/images/icon-thin-chevron-up.svg" alt="speed-chevron-up">
+                </button>
+                <button type="button" id="speed-decrease">
+                  <img src="assets/images/icon-thin-chevron-down.svg" alt="speed-chevron-down">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tesla-control-item">
+            <p class="tesla-control-item__title">
+              Outside Temperature
+            </p>
+            <div class="tesla-controls-button__wrapper flex-center">
+              <div class="tesla-controls-button__wrapper-content">
+                <span class="tesla-controls-button__content" id="heatIndicator"></span>
+                <span>°</span>
+              </div>
+              <div class="tesla-controls-button__controls">
+                <button type="button" id="heat-increase">
+                  <img src="assets/images/icon-thin-chevron-up.svg" alt="speed-chevron-up">
+                </button>
+                <button type="button" id="heat-decrease">
+                  <img src="assets/images/icon-thin-chevron-down.svg" alt="speed-chevron-down">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tesla-control-item flex-center">
+
+            <label class="ac-controls flex-center" id="ac-toggle">
+              <p id="ac-text"></p>
+              <img id="ac-image" src="assets/images/icon-wave-gray.svg" alt="ac-icon">
+              <input type="checkbox">
+            </label>
+
+          </div>
+
+          <div class="tesla-control-item">
+            <p class="tesla-control-item__title">
+              Wheels
+            </p>
+            <div class="wheel-wrapper flex-center">
+              <div class="tesla-controls-button__wrapper flex-center" id="wheel-select-19">
+                <label class="wheel-controls flex-center">
+                  <img src="assets/images/icon-wheel.svg" alt="19-inch-wheel-icon">
+                  <input type="radio">
+                  <p>19"</p>
+                </label>
+              </div>
+              <div class="tesla-controls-button__wrapper flex-center" id="wheel-select-21">
+                <label class="wheel-controls flex-center">
+                  <img src="assets/images/icon-wheel.svg" alt="21-inch-wheel-icon">
+                  <input type="radio">
+                  <p>21"</p>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <p class="config-information">The actual amount of range that you experience will vary based on your particular use conditions.
+          Your vehicle range is also dependent on other conditions, such as vehicle configuration, battery age and condition, driving style and operating, environmental and climate conditions.
+          See how some of these particular use conditions may affect your range in our simulation model.
+        </p>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-columns">
+        <div class="footer__column-wrapper">
+          <div class="footer__column-title">
+            Contact Us
+          </div>
+          <ul class="footer__column-list">
+            <li class="footer__column-list-item">
+              +44 345 678 903
+            </li>
+            <li class="footer__column-list-item">
+              adobexd@mail.com
+            </li>
+            <li class="footer__column-list-item">
+              Find a Store
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__column-wrapper">
+          <div class="footer__column-title">
+            Customer Service
+          </div>
+          <ul class="footer__column-list">
+            <li class="footer__column-list-item">
+              <a href="#"> Contact US </a>
+            </li>
+            <li class="footer__column-list-item">
+              <a href="#"> Ordering & Payment </a>
+            </li>
+            <li class="footer__column-list-item">
+              <a href="#"> Shipping </a>
+            </li>
+            <li class="footer__column-list-item">
+              <a href="#"> Returns </a>
+            </li>
+            <li class="footer__column-list-item">
+              <a href="#"> FAQ </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__column-wrapper">
+          <div class="footer__column-title">
+            Information
+          </div>
+          <ul class="footer__column-list">
+            <li class="footer__column-list-item">
+              <a href="#"> About this example </a>
+            </li>
+            <li class="footer__column-list-item">
+              <a href="#"> Work With Us </a>
+            </li>
+            <li class="footer__column-list-item">
+              <a href="#"> Privacy Policy </a>
+            </li>
+            <li class="footer__column-list-item">
+              <a href="#"> Terms & Conditions </a>
+            </li>
+            <li class="footer__column-list-item">
+              <a href="#"> Press Enquiries </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__column-wrapper">
+          <div class="footer__column-title">
+            Subscribe to us via Email
+          </div>
+          <div class="subscribe-text">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          </div>
+          <div class="subscribe-action flex-center">
+            <input type="email" placeholder="Email Address">
+            <button type="button">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="message">
+        Made with <span role="img" aria-label="red-heart">❤️</span> for Sendcloud
+      </div>
+
+
+    </footer>
+
+  </div>
+
+  <script src="./js/loadCarData.js"></script>
+  <script src="./js/updateDOM.js"></script>
+  <script src="./js/eventHandlers.js"></script>
+  <script src="./js/processEvent.js"></script>
+  <script src="./js/calculateCarData.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
