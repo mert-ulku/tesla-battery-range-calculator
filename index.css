@@ -608,6 +608,11 @@ input[type="radio"]
 }
 
 @media (max-width: 1024px) {
+
+  .header {
+    height: 50vh;
+  }
+
   .wheels {
     width: 76px;
     bottom: 2.2rem;
@@ -662,19 +667,30 @@ input[type="radio"]
   }
 }
 
-@media (max-width: 767.98px) {
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .header {
+      height: 45vh;
+    }
+
+}
+
+@media (max-width: 768px) {
 
   .info-per-car__item {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
   }
 
-  .vehicle-menu .vehicle-menu __list {
+  .vehicle-menu .vehicle-menu__list {
     gap: 0.5rem;
   }
 
   .header {
-    height: 55vh;
+    height: 40vh;
   }
 
   main h2 {
@@ -776,6 +792,10 @@ input[type="radio"]
   .wheels {
     width: 38px;
     bottom: 1.1rem;
+  }
+
+  .main__content > * {
+    margin-bottom: 1rem;
   }
 
   .wheels.left {
