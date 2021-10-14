@@ -145,7 +145,7 @@ h2 {
 }
 
 .main__content p:nth-of-type(2) {
-  max-width: 45%;
+  max-width: 65%;
   text-align: center;
 }
 
@@ -632,6 +632,12 @@ input[type="radio"]
     margin: 0 auto;
   }
 
+  .footer {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
   .footer-columns {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -672,9 +678,25 @@ input[type="radio"]
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
 
-    .header {
-      height: 45vh;
-    }
+  .header {
+    height: 45vh;
+  }
+
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .main__content p:nth-of-type(2) {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+  .config-information {
+    font-size: 1.2rem;
+  }
 
 }
 
@@ -691,6 +713,10 @@ input[type="radio"]
 
   .header {
     height: 40vh;
+  }
+
+  .main__content p:nth-of-type(2) {
+    max-width: 70%;
   }
 
   main h2 {
@@ -716,17 +742,13 @@ input[type="radio"]
     margin: 0 auto;
   }
 
-  .main__content {
-    max-width: unset;
-  }
-
   .main__content p:nth-of-type(1) {
     font-size: 2rem;
-    max-width: unset;
   }
 
-  .main__content p:nth-of-type(2) {
-    max-width: unset;
+  .main__content p:nth-of-type(1),
+  .main__content p:nth-of-type(2)  {
+    max-width: 100%;
   }
 
   .tesla-result {
@@ -857,6 +879,9 @@ and (orientation : portrait) {
   }
 
   .subscribe-action {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -900,6 +925,68 @@ and (orientation : portrait) {
 
   .config-information {
     text-align: center;
+  }
+
+}
+
+@media(max-width: 320px){
+
+  .vehicle-menu__list {
+    display: none;
+  }
+
+  .header {
+    height: 20vh;
+  }
+
+  .car-image {
+    max-width: 248px;
+    min-width: 248px;
+  }
+
+  .wheels {
+    width: 25px;
+    bottom: .8rem;
+  }
+
+  .wheels.left {
+    left: 3.8rem;
+  }
+
+  .wheels.right {
+    right: 4.05rem;
+  }
+
+  .car-image.size-21
+  .left,
+  .car-image.size-21
+  .right{
+    width: 27px;
+    bottom: .8rem;
+  }
+
+  .car-image.size-21 .right {
+    right: 4rem;
+  }
+
+  .car-image.size-21 .left {
+    left: 3.75rem;
+  }
+
+  .footer-columns {
+    padding: 1rem 0;
+  }
+
+  .subscribe-action {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .subscribe-action input {
+    margin-right: 0;
+    margin-bottom: .5rem;
   }
 
 }
