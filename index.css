@@ -644,6 +644,22 @@ input[type="radio"]
   .footer__column-wrapper:not(:last-child) {
     margin-right: 0;
   }
+
+  .car-image.size-21
+  .left,
+  .car-image.size-21
+  .right{
+    width: 80px;
+    bottom: 2rem;
+  }
+
+  .car-image.size-21 .right {
+    right: 13.2rem;
+  }
+
+  .car-image.size-21 .left {
+    left: 12.25rem;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -734,6 +750,22 @@ input[type="radio"]
     text-align: center;
   }
 
+  .car-image.size-21
+  .left,
+  .car-image.size-21
+  .right{
+    width: 55px;
+    bottom: 1.5rem;
+  }
+
+  .car-image.size-21 .right {
+    right: 9.05rem;
+  }
+
+  .car-image.size-21 .left {
+    left: 8.4rem;
+  }
+
 }
 
 @media (max-width: 575.98px) {
@@ -758,6 +790,23 @@ input[type="radio"]
     max-width: 383px;
     min-width: 383px;
     margin: 0 auto;
+  }
+
+
+  .car-image.size-21
+  .left,
+  .car-image.size-21
+  .right{
+    width: 40px;
+    bottom: 1rem;
+  }
+
+  .car-image.size-21 .right {
+    right: 6.25rem;
+  }
+
+  .car-image.size-21 .left {
+    left: 5.8rem;
   }
 }
 
