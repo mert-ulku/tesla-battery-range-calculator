@@ -866,7 +866,7 @@ and (max-device-width : 568px)
 and (orientation : portrait) {
 
   .header {
-    height: 40vh;
+    height: 30vh;
   }
 
   .vehicle-menu__link {
