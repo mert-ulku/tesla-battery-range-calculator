@@ -689,6 +689,10 @@ input[type="radio"]
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+  .vehicle-menu__link {
+    font-size: 1.5rem;
+  }
+
   .main__content p:nth-of-type(2) {
     font-size: 2rem;
     max-width: 100%;
@@ -811,6 +815,10 @@ input[type="radio"]
     height: 40vh;
   }
 
+  .vehicle-menu {
+    padding: .5rem;
+  }
+
   .wheels {
     width: 38px;
     bottom: 1.1rem;
@@ -858,7 +866,7 @@ and (max-device-width : 568px)
 and (orientation : portrait) {
 
   .header {
-    height: 30vh;
+    height: 40vh;
   }
 
   .vehicle-menu__link {
@@ -931,12 +939,24 @@ and (orientation : portrait) {
 
 @media(max-width: 320px){
 
+  .vehicle-menu {
+    padding: .5rem;
+  }
+
   .vehicle-menu__list {
-    display: none;
+   font-size: 10px;
   }
 
   .header {
-    height: 20vh;
+    height: 30vh;
+  }
+
+  .main__content p:nth-of-type(1) {
+    font-size: 1.5rem;
+  }
+
+  .main__content p:nth-of-type(2) {
+    font-size: .9rem;
   }
 
   .car-image {
