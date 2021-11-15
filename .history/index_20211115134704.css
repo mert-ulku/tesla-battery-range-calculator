@@ -435,6 +435,10 @@ input[type="radio"]
   justify-content: flex-start;
 }
 
+.message {
+  margin: 0 auto 20px;
+}
+
 .footer__column-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
